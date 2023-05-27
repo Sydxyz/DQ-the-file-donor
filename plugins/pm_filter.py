@@ -1322,7 +1322,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "button":
         buttons = [[
-            InlineKeyboardButton(' Jᴏɪɴ Oᴜʀ CʜΔɴɴᴇʟ ', url='https://t.me/Mod_MoviezX')
+            InlineKeyboardButton(' Jᴏɪɴ Oᴜʀ CʜΔɴɴᴇʟ ⬈', url='https://t.me/Mod_MoviezX')
         ],[
             InlineKeyboardButton('Hᴇʟр', callback_data='testalertsyd')
         ],[
@@ -1402,7 +1402,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             parse_mode=enums.ParseMode.HTML
         )
     elif query.data =="testalertsyd":
-        await query.answer("h",show_alert=True)
+        await query.answer("Dᴏɴ'ᴛ ɴᴇᴇᴅ Tᴏ ᴛʜɪɴᴋ ʙʀᴏ,ᴊᴜꜱᴛ ᴊᴏɪɴ 🥰",show_alert=True)
     elif query.data == "admin":
         buttons = [[
             InlineKeyboardButton('☚ Bᴀᴄᴋ', callback_data='extra')
