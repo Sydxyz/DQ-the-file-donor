@@ -1403,15 +1403,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data =="testalertsyd":
         await query.answer("Dᴏɴ'ᴛ ɴᴇᴇᴅ Tᴏ ᴛʜɪɴᴋ ʙʀᴏ,ᴊᴜꜱᴛ ᴊᴏɪɴ 🥰",show_alert=True)
+        
     elif query.data == "admin":
         buttons = [[
             InlineKeyboardButton('☚ Bᴀᴄᴋ', callback_data='extra')
         ]]
-        await client.edit_message_media(
-            query.message.chat.id, 
-            query.message.id, 
-            InputMediaPhoto(random.choice(PICS))
-        )
+
         reply_markup = InlineKeyboardMarkup(buttons)
         if query.from_user.id in ADMINS:
             await query.edit_message_media(InputMediaPhoto(random.choice(PICS), script.ADMIN_TXT, enums.ParseMode.HTML), reply_markup=reply_markup)
