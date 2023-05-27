@@ -1417,7 +1417,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             await query.edit_message_media(InputMediaPhoto(random.choice(PICS), script.ADMIN_TXT, enums.ParseMode.HTML), reply_markup=reply_markup)
         else:
             await query.answer("Bʀᴏ Sᴏʀʀy, Yᴏᴜ Cᴀɴ'ᴛ Cʜᴇᴄᴋ Iᴛ. Iᴛꜱ Only Fᴏʀ ᴍy Δᴅᴍɪɴ. Iꜰ Yᴏᴜ Aʀᴇ Rᴇᴀʟʟy Iɴᴛʀᴇꜱᴛᴇᴅ, Tʜᴇɴ Cʟɪᴄᴋ ᴏИ 'Hᴇʀᴇ //'  ", show_alert=True)
-            )
+            
     elif query.data == "stats":
         buttons = [[
             InlineKeyboardButton('☚ Bᴀᴄᴋ', callback_data='help'),
