@@ -1259,7 +1259,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ],[
             InlineKeyboardButton('⬈ ⬙ ⬈ ѕhαrє ๓℮ ⬈ ⬙ ⬈', url='https://t.me/share/url?url=url=http://t.me/{temp.U_NAME}')
 
-                ],[')
+             
         ]]
         await client.edit_message_media(
             query.message.chat.id, 
