@@ -107,7 +107,8 @@ async def answer(bot, query):
 def get_reply_markup(query):
     buttons = [
         [
-            InlineKeyboardButton('Search again', switch_inline_query_current_chat=query)
+            InlineKeyboardButton('Sᴇᴀʀᴄʜ Δɢᴀɪɴ', switch_inline_query_current_chat=query),
+            InlineKeyboardButton('SʜᴀʀΞ ᴛʜᴇ Fɪʟᴇ', url
         ]
         ]
     return InlineKeyboardMarkup(buttons)
