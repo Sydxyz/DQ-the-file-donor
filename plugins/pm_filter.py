@@ -1250,7 +1250,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('🫥 CʀΞᴀᴛᴇ Δ βᴏᴛ Lɪᴋᴇ Պᴇ 🫥', callback_data='source')
         ],[
             InlineKeyboardButton('⌂ Hᴏᴍᴇ ⌂', callback_data='start'),
-            InlineKeyboardButton('⛒ Cʟᴏsᴇ ⛒', callback_data='close_data')
+            InlineKeyboardButton('⨷ Cʟᴏsᴇ ⨷', callback_data='close_data')
         ],[
             InlineKeyboardButton('⬈ ⬙ ⬈ ѕhαrє ๓℮ ⬈ ⬙ ⬈', url='https://t.me/share/url?url=url=http://t.me/{temp.U_NAME}')
 
@@ -1367,7 +1367,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "extra":
         buttons = [[
             InlineKeyboardButton('☚ Bᴀᴄᴋ', callback_data='help'),
-            InlineKeyboardButton('Aᴅᴍɪɴ', callback_data='admin')
+            InlineKeyboardButton('Aᴅᴍɪɴ 👣', callback_data='admin')
         ],[
             InlineKeyboardButton('Hᴇʀᴇ //', url='https://t.me/sydxyz')
          ]]
@@ -1439,7 +1439,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer("Fetching MongoDb DataBase")
         buttons = [[
             InlineKeyboardButton('☚ Bᴀᴄᴋ', callback_data='help'),
-            InlineKeyboardButton('⟲ Rᴇғʀᴇsʜ', callback_data='rfrsh')
+            InlineKeyboardButton('⟳ Rᴇғʀᴇsʜ', callback_data='rfrsh')
         ]]
         await client.edit_message_media(
             query.message.chat.id, 
@@ -1462,7 +1462,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "owner_info":
             btn = [[
                     InlineKeyboardButton("☚ Bᴀᴄᴋ", callback_data="start"),
-                    InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", user_id=1733124290)
+                    InlineKeyboardButton("☏ Cᴏɴᴛᴀᴄᴛ ☏", user_id=1733124290)
                   ]]
             await client.edit_message_media(
                 query.message.chat.id, 
