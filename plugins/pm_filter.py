@@ -712,7 +712,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                              [
 
              
-                              InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="t.me/creatorbeatz")
+                              InlineKeyboardButton("⚐ Wᴀᴛᴄʜ Ѧɴᴅ Ξɴᴊᴏy ❦", url="t.me/creatorbeatz")
                              ]
                             ]
                         )
@@ -784,7 +784,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                   InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
                   InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
                ],[
-                  InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="t.me/creatorbeatz")
+                  InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="t.me/syd_xyz")
                  ]
                 ]
             )
@@ -1435,7 +1435,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             parse_mode=enums.ParseMode.HTML
         )
     elif query.data == "rfrsh":
-        await query.answer("Fetching MongoDb DataBase")
+        await query.answer("Fᴇᴛᴄʜɪɴɢ My Sᴛᴀᴛᴜꜱ")
         buttons = [[
             InlineKeyboardButton('☚ Bᴀᴄᴋ', callback_data='help'),
             InlineKeyboardButton('⟳ Rᴇғʀᴇsʜ', callback_data='rfrsh')
@@ -1551,6 +1551,18 @@ async def cb_handler(client: Client, query: CallbackQuery):
                                          callback_data=f'setgs#is_shortlink#{settings["is_shortlink"]}#{str(grp_id)}'),
                     InlineKeyboardButton('✔ Oɴ' if settings["is_shortlink"] else '✘ Oғғ',
                                          callback_data=f'setgs#is_shortlink#{settings["is_shortlink"]}#{str(grp_id)}')
+                ],
+
+                [
+
+                    InlineKeyboardButton('BᴀᴄҜ-Uᴩ', 
+
+                                         url='https://t.me/nt_Backup/5'),
+
+                    InlineKeyboardButton('RΞＱᴇꜱΓ' ,
+
+                                         url='https://t.me/+0Zi1FC4ulo8zYzVl')
+
                 ]
             ]
             reply_markup = InlineKeyboardMarkup(buttons)
