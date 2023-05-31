@@ -5,18 +5,19 @@ Mʏ Nᴀᴍᴇ Is <a href=https://t.me/{}>{}</a>, I Cᴀɴ Pʀᴏᴠɪᴅᴇ M�
     HELP_TXT = """<b>Hᴇʏ {}
 Hᴇʀᴇ Is Tʜᴇ Hᴇʟᴘ Fᴏʀ Mʏ Cᴏᴍᴍᴀɴᴅs.</b>"""
 
-    ABOUT_TXT = """<b> ⍟-─-───[ ʙᴏᴛ-ᴅᴇᴛΔɪʟꜱ ]─-─-─-─-─-⍟
+    ABOUT_TXT = """<b> ⍟──────[ ʙᴏᴛ-ᴅᴇᴛΔɪʟꜱ ]──────⍟
 ✯ Mʏ Nᴀᴍᴇ: {}
 ✯ Cʀᴇᴀᴛᴏʀ: <a href='https://t.me/Syd_XyZ'>≛ ᴍ𝖗𓆩𝕾𝖄𝕯𓆪ꪾ</a>
 ✯ Lɪʙʀᴀʀʏ: <a href='https://mrsydoo.blogspot.com/2023/05/you-cant-count-no-of-ads-ad-site.html'>Bʟᴏɢɢᴇʀ; TʜΞ Δᴅ SɪΓΞ 😊</a>
 ✯ Lᴀɴɢᴜᴀɢᴇ: <a href='https://t.me/+oej8cujHMFJhNmI9'>Pᴀᴄʜᴀ ᴍᴀʟᴀയാളം,Wɪᴛʜ ΞИGLISH🤕</a>
-✯ DᴀᴛᴀBᴀsᴇ: <a href='https://t.me/+3-nuV_9INIg0MDY1'> Tɢ 🫥</a>
+✯ DᴀᴛᴀBᴀsᴇ: <a href='https://t.me/+3-nuV_9INIg0MDY1'>Tɢ 🫥</a>
 ✯ Bᴏᴛ Sᴇʀᴠᴇʀ: <a href='https://t.me/bot_Cracker'>BᴏΓ CΓΔCᴋΣRꜱ 😵‍💫</a>
+✯ Pґᴏᴠɪᴅᴇʀ: <a href='https://t.me/mod_moviezx'>Mᴏᴅ Mᴏᴠɪᴇᴢ ❎️ 〰️™️🌐 </a>
 ✯ Yᴏᴜ TᴜʙΞ: <a href='https://youtube.com/@Mr_Syd_Yt'> @Mr_sYd_yT ☺️</a>
-✯ ʙΔᴄᴋ-Uᴩ: <a href='https://t.me/nt_Backup/5'> UʀɢΞɴᴛ BΔᴄᴋ-Uᴩ🎗🔙🔄 </a>
+✯ ʙΔᴄᴋ-Uᴩ: <a href='https://t.me/nt_Backup/5'> UʀɢΞɴᴛ BΔᴄᴋ-Uᴩ🎗🔙🔄</a>
 ✯ Bᴜɪʟᴅ ∇ᴇʀꜱɪᴏɴ : v2 [ ≛ Bƴ ʍɾ Sчᴅ ≛ ]
 
-⍟────[ Tʜᴇ ΞɴD ]────⍟</b>"""
+⍟───────[ Tʜᴇ ΞɴD ]───────⍟</b>"""
 
 
 
@@ -27,8 +28,9 @@ Hᴇʀᴇ Is Tʜᴇ Hᴇʟᴘ Fᴏʀ Mʏ Cᴏᴍᴍᴀɴᴅs.</b>"""
 - Nᴇᴠᴇʀ Sʜᴏᴡ Sʜy Tᴏ Mᴇꜱꜱᴀɢᴇ.
 
 Dᴇᴠᴇʟᴏᴘᴇʀ:
-- <a href="https://t.me/Syd_Xyz">Jᴏᠰ TɢX</a></b>"""
-
+- <a href="https://t.me/Syd_Xyz">≛ ᴍᖇ Sy∂ ≛</a>
+- <a href="tg://user?id={}">⍟ {} ⍟</a></b>"""
+    
     MANUELFILTER_TXT = """ʜᴇʟᴘ: <b>ꜰɪʟᴛᴇʀꜱ</b>
 - ꜰɪʟᴛᴇʀ ɪꜱ ᴀ ꜰᴇᴀᴛᴜʀᴇ ᴡᴇʀᴇ ᴜꜱᴇʀꜱ ᴄᴀɴ ꜱᴇᴛ ᴀᴜᴛᴏᴍᴀᴛᴇᴅ ʀᴇᴘʟɪᴇꜱ ꜰᴏʀ ᴀ ᴘᴀʀᴛɪᴄᴜʟᴀʀ ᴋᴇʏᴡᴏʀᴅ ᴀɴᴅ ɪ ᴡɪʟʟ ʀᴇꜱᴘᴏɴᴅ ᴡʜᴇɴᴇᴠᴇʀ ᴀ ᴋᴇʏᴡᴏʀᴅ ɪꜱ ꜰᴏᴜɴᴅ ɪɴ ᴛʜᴇ ᴍᴇꜱꜱᴀɢᴇ
 <b>ɴᴏᴛᴇ:</b>
@@ -131,7 +133,7 @@ Cᴏᴍᴍᴀɴᴅs Aɴᴅ Usᴀɢᴇ:
 ★ Tᴏᴛᴀʟ Cʜᴀᴛs : <code>{}</code>
 ★ Usᴇᴅ Sᴛᴏʀᴀɢᴇ: <code>{}</code>
 ★ Fʀᴇᴇ Sᴛᴏʀᴀɢᴇ: <code>{}</code>
-♛    OᴡɴΞʀ   : <a href=https://t.me/syd_xyz> 8</a> </b>"""
+♛    OᴡɴΞʀ   : <a href=https://t.me/syd_xyz> </a> </b>"""
 
     LOG_TEXT_G = """#NewGroup
 Gʀᴏᴜᴘ = {}(<code>{}</code>)
