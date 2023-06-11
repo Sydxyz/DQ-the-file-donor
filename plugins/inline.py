@@ -22,7 +22,7 @@ async def inline_users(query: InlineQuery):
 
 @Client.on_inline_query()
 async def answer(bot, query):
-    """Sʜᴏᴡ Sᴇᴀʀᴄʜ Rᴇꜱᴜʟᴛꜱ Fᴏʀ Gɪᴠᴇɴ Iɴʟɪɴ"""
+    """slalsposososkskks"""
     chat_id = await active_connection(str(query.from_user.id))
     
     if not await inline_users(query):
