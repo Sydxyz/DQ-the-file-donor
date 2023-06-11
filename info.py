@@ -42,6 +42,7 @@ REQST_CHANNEL = int(reqst_channel) if reqst_channel and id_pattern.search(reqst_
 SUPPORT_CHAT_ID = int(environ.get('SUPPORT_CHAT_ID'))
 NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", False))
 SYD_LINKS = 'https://t.me/+0Zi1FC4ulo8zYzVl'
+SYD_SHARE = 'https://t.me/000000000'
 # MongoDB information
 DATABASE_URI = environ.get('DATABASE_URI', "")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Rajappan")
