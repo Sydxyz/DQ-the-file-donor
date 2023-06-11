@@ -107,7 +107,7 @@ async def answer(bot, query):
 def get_reply_markup(query):
     buttons = [
         [
-            Inlinekeyboardbutton('〄 SᴜᴩᴩOʀᴛ ᴜS 〄', url=SYD_LINKS),
+            Inlinekeyboardbutton('〄 SᴜᴩᴩOʀᴛ ᴜS 〄', url='https://t.me/parallel'),
             InlineKeyboardButton('Sᴇᴀʀᴄʜ Δɢᴀɪɴ', switch_inline_query_current_chat=query)
             ],[
             InlineKeyboardButton('SʜᴀʀΞ ოє ', url='ђђђ')
