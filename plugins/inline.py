@@ -4,7 +4,7 @@ from pyrogram.errors.exceptions.bad_request_400 import QueryIdInvalid
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, InlineQueryResultCachedDocument, InlineQuery
 from database.ia_filterdb import get_search_results
 from utils import is_subscribed, get_size, temp
-from info import CACHE_TIME, AUTH_USERS, AUTH_CHANNEL, CUSTOM_FILE_CAPTION, SYD_LINKS
+from info import CACHE_TIME, AUTH_USERS, AUTH_CHANNEL, CUSTOM_FILE_CAPTION, SYD_LINKS, SYD_SHARE
 from database.connections_mdb import active_connection
 
 logger = logging.getLogger(__name__)
@@ -22,7 +22,7 @@ async def inline_users(query: InlineQuery):
 
 @Client.on_inline_query()
 async def answer(bot, query):
-    """slalsposososkskks"""
+     """ Results """
     chat_id = await active_connection(str(query.from_user.id))
     
     if not await inline_users(query):
@@ -107,9 +107,10 @@ async def answer(bot, query):
 def get_reply_markup(query):
     buttons = [
         [
-            InlineKeyboardButton('〄 SᴜᴩᴩOʀᴛ ᴜS 〄', url='https://t.me/parallel'),
-            InlineKeyboardButton('Sᴇᴀʀᴄʜ Δɢᴀɪɴ', switch_inline_query_current_chat=query),
-            InlineKeyboardButton('SʜᴀʀΞ ოє ', url='https://t.me/parallel')
+            InlineKeyboardButton('〄 SᴜᴩᴩOʀᴛ ᴜS 〄', url=SYD_LINKS),
+            InlineKeyboardButton('Sᴇᴀʀᴄʜ Δɢᴀɪɴ', switch_inline_query_current_chat=query)
+        ],[
+            InlineKeyboardButton('SʜᴀʀΞ ოє ↬ ', url=SYD_SHARE)
         ]
         ]
     return InlineKeyboardMarkup(buttons)
