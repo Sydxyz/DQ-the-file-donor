@@ -110,7 +110,7 @@ def get_reply_markup(query):
             Inlinekeyboardbutton('〄 SᴜᴩᴩOʀᴛ ᴜS 〄', url='https://t.me/parallel'),
             InlineKeyboardButton('Sᴇᴀʀᴄʜ Δɢᴀɪɴ', switch_inline_query_current_chat=query),
             
-            InlineKeyboardButton('SʜᴀʀΞ ოє ', url='ђђђ')
+            InlineKeyboardButton('SʜᴀʀΞ ოє ', url='https://t.me/parallel')
         ]
         ]
     return InlineKeyboardMarkup(buttons)
