@@ -78,10 +78,10 @@ async def who_is(client, message):
     message_out_str += f"<b>➲ Lᴀꜱᴛ Nᴀᴍᴇ:</b> {last_name}\n"
     message_out_str += f"<b>➲ Tᴇʟᴇɢʀᴀᴍ Iᴅ:</b> <code>{from_user.id}</code>\n"
     username = from_user.username or "<b>Nᴏɴᴇ</b>"
-    dc_id = from_user.dc_id or "[User Doesn't Have A Valid DP]"
-    message_out_str += f"<b>➲Data Centre:</b> <code>{dc_id}</code>\n"
-    message_out_str += f"<b>➲User Name:</b> @{username}\n"
-    message_out_str += f"<b>➲User 𝖫𝗂𝗇𝗄:</b> <a href='tg://user?id={from_user.id}'><b>Click Here</b></a>\n"
+    dc_id = from_user.dc_id or "[Uꜱᴇʀ Dᴏᴇꜱɴ'ᴛ Hᴀᴠᴇ A Vᴀʟɪᴅ DP]"
+    message_out_str += f"<b>➲ Dᴀᴛᴀ Cᴇɴᴛʀᴇ:</b> <code>{dc_id}</code>\n"
+    message_out_str += f"<b>➲ Uꜱᴇʀ Nᴀᴍᴇ:</b> @{username}\n"
+    message_out_str += f"<b>➲ Uꜱᴇʀ 𝖫ɪɴᴋ:</b> <a href='tg://user?id={from_user.id}'><b>Cʟɪᴄᴋ Hᴇʀᴇ</b></a>\n"
     if message.chat.type in ((enums.ChatType.SUPERGROUP, enums.ChatType.CHANNEL)):
         try:
             chat_member_p = await message.chat.get_member(from_user.id)
@@ -89,7 +89,7 @@ async def who_is(client, message):
                 chat_member_p.joined_date or datetime.now()
             ).strftime("%Y.%m.%d %H:%M:%S")
             message_out_str += (
-                "<b>➲Joined this Chat on:</b> <code>"
+                "<b>➲Jᴏɪɴᴇᴅ Tʜɪꜱ Cʜᴀᴛ 0ɴ:</b> <code>"
                 f"{joined_date}"
                 "</code>\n"
             )
