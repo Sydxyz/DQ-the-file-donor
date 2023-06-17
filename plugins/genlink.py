@@ -34,21 +34,21 @@ async def gen_link_s(bot, message):
     string = 'filep_' if message.text.lower().strip() == "/plink" else 'file_'
     string += file_id
     outstr = base64.urlsafe_b64encode(string.encode("ascii")).decode().strip("=")
-    await message.reply(f"Here is your Link:\nhttps://t.me/{temp.U_NAME}?start={outstr}")
+    await message.reply(f"Hᴇʀᴇ ɪꜱ y0ᴜʀ Lɪɴᴋ:\nhttps://t.me/{temp.U_NAME}?start={outstr}")
     
     
 @Client.on_message(filters.command(['batch', 'pbatch']) & filters.create(allowed))
 async def gen_link_batch(bot, message):
     if " " not in message.text:
-        return await message.reply("Use correct format.\nExample <code>/batch https://t.me/Mod_MoviezX/10 https://t.me/Mod_moviezx/30</code>.")
+        return await message.reply("Uꜱᴇ ᴄᴏʀʀᴇᴄᴛ fᴏʀᴍᴀᴛ.\nExample <code>/batch https://t.me/Mod_MoviezX/10 https://t.me/Mod_moviezx/30</code>.")
     links = message.text.strip().split(" ")
     if len(links) != 3:
-        return await message.reply("Use correct format.\nExample <code>/batch https://t.me/Gettglinks/1 https://t.me/GETTGLINKS/50</code>.")
+        return await message.reply("Uꜱᴇ cᴏʀʀᴇᴄᴛ fᴏʀᴍᴀᴛ.\nExᴀᴍᴩʟᴇ <code>/batch https://t.me/Gettglinks/1 https://t.me/GETTGLINKS/50</code>.")
     cmd, first, last = links
     regex = re.compile("(https://)?(t\.me/|telegram\.me/|telegram\.dog/)(c/)?(\d+|[a-zA-Z_0-9]+)/(\d+)$")
     match = regex.match(first)
     if not match:
-        return await message.reply('Invalid link')
+        return await message.reply('Iɴᴠᴀʟɪᴅ lɪɴᴋ')
     f_chat_id = match.group(4)
     f_msg_id = int(match.group(5))
     if f_chat_id.isnumeric():
@@ -67,19 +67,19 @@ async def gen_link_batch(bot, message):
     try:
         chat_id = (await bot.get_chat(f_chat_id)).id
     except ChannelInvalid:
-        return await message.reply('This may be a private channel / group. Make me an admin over there to index the files.')
+        return await message.reply('Tʜɪꜱ ᴍᴀy ʙᴇ ᴀ ᴩʀɪᴠᴀᴛᴇ ᴄʜAɴɴᴇʟ / Gʀᴏᴜᴩ. Mᴀᴋᴇ ᴍᴇ ᴀɴ ᴀᴅᴍɪɴ oᴠᴇʀ ᴛʜᴇʀᴇ ᴛO ᴄʀᴇᴀᴛᴇ ᴀ ʟɪɴᴋ Fᴏʀ ᴛʜᴇ ꜰɪʟᴇꜱ.')
     except (UsernameInvalid, UsernameNotModified):
-        return await message.reply('Invalid Link specified.')
+        return await message.reply('Iɴᴠᴀʟɪᴅ Lɪɴᴋ ꜱᴩᴇᴄɪꜰɪᴇᴅ.')
     except Exception as e:
-        return await message.reply(f'Errors - {e}')
+        return await message.reply(f'Eʀʀᴏʀꜱ - {e}')
 
-    sts = await message.reply("Generating link for your message.\nThis may take time depending upon number of messages")
+    sts = await message.reply("Gᴇɴᴇʀᴀᴛɪɴɢ Lɪɴᴋ Fᴏʀ Yᴏᴜʀ Mᴇꜱꜱᴀɢᴇ.\nTʜɪꜱ ᴍᴀy ᴛᴀᴋᴇ ᴛɪᴍᴇ ᴅᴇᴩᴇɴᴅɪɴɢ ᴜᴩᴏɴ ɴᴜᴍʙᴇʀꜱ ᴏꜰ ᴍᴇꜱꜱᴀɢᴇꜱ")
     if chat_id in FILE_STORE_CHANNEL:
         string = f"{f_msg_id}_{l_msg_id}_{chat_id}_{cmd.lower().strip()}"
         b_64 = base64.urlsafe_b64encode(string.encode("ascii")).decode().strip("=")
         return await sts.edit(f"Here is your link https://t.me/{temp.U_NAME}?start=DSTORE-{b_64}")
 
-    FRMT = "Generating Link...\nTotal Messages: `{total}`\nDone: `{current}`\nRemaining: `{rem}`\nStatus: `{sts}` \nPᴏᴡᴇʀΞᴅ By : <a href='https://t.me/Syd_xyz'>≛ ᴍ𝖗𓆩𝕾𝖄𝕯𓆪ꪾ<\a>"
+    FRMT = "Gᴇɴᴇʀᴀᴛɪɴɢ Lɪɴᴋ...\nTᴏᴛᴀʟ Mᴇꜱꜱᴀɢᴇꜱ: `{total}`\nDᴏɴᴇ: `{current}`\nRᴇᴍᴀɪɴɪɴɢ: `{rem}`\nSᴛᴀᴛᴜꜱ: `{sts}` \nPᴏᴡᴇʀΞᴅ By : <a href='https://t.me/Syd_xyz'>≛ ᴍ𝖗𓆩𝕾𝖄𝕯𓆪ꪾ<\a>"
 
     outlist = []
 
