@@ -791,11 +791,18 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                  InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
-                  InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
-               ],[
-                  InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="t.me/syd_xyz")
-                 ]
+                  InlineKeyboardButton('〄 SᴜᴩᴩOʀᴛ ᴜS 〄', url=SYD_LINKS),
+
+                             
+                             InlineKeyboardButton('Iɴʟɪɴᴇ SᴇΔʀᴄʜ ☌', switch_inline_query_current_chat=query)
+
+        ],[
+
+
+
+             
+                              InlineKeyboardButton("⚐ Wᴀᴛᴄʜ Ѧɴᴅ Ξɴᴊᴏy ❦", url=SYD_SHARE)
+                             ]
                 ]
             )
         )
