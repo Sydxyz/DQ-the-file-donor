@@ -240,7 +240,7 @@ async def next_page(bot, query):
                 ],
             )
     btn.insert(0, [
-        InlineKeyboardButton("! Sᴇɴᴅ Δʟʟ Tᴏ PM !",  url=await get_shortlink(query.message.chat.id, f"https://telegram.me/{temp.U_NAME}?start=send_fall#files#{offset}#{req}"),
+        InlineKeyboardButton("! Sᴇɴᴅ Δʟʟ Tᴏ PM !",  url=await get_shortlink(query.message.chat.id, f"https://telegram.me/{temp.U_NAME}?start=send_fall_files_{offset}_{req}"),
         InlineKeyboardButton("! LᴀɴɢᴜΔɢᴇs !", callback_data=f"select_lang#{req}")
     ]
 )
