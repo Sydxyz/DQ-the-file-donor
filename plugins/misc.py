@@ -32,9 +32,9 @@ async def showid(client, message):
         )
         if message.reply_to_message:
             _id += (
-                "<b>➩ User ID</b>: "
-                f"<code>{message.from_user.id if message.from_user else 'Anonymous'}</code>\n"
-                "<b>➩ Replied User ID</b>: "
+                "<b>➩ Uꜱᴇʀ Iᴅ</b>: "
+                f"<code>{message.from_user.id if message.from_user else 'Aɴᴏɴyᴍᴏᴜꜱ'}</code>\n"
+                "<b>➩ Rᴇᴩʟɪᴇᴅ Uꜱᴇʀ Iᴅ</b>: "
                 f"<code>{message.reply_to_message.from_user.id if message.reply_to_message.from_user else 'Anonymous'}</code>\n"
             )
             file_info = get_file_id(message.reply_to_message)
@@ -58,10 +58,10 @@ async def showid(client, message):
 async def who_is(client, message):
     # https://github.com/SpEcHiDe/PyroGramBot/blob/master/pyrobot/plugins/admemes/whois.py#L19
     status_message = await message.reply_text(
-        "`Fetching user info...`"
+        "`Fᴇᴛᴄʜɪɴɢ ᴜꜱᴇʀ ɪɴꜰᴏ...`"
     )
     await status_message.edit(
-        "`Processing user info...`"
+        "`Pʀᴏᴄeꜱꜱɪɴɢ ᴜꜱᴇʀ ɪɴꜰᴏ...`"
     )
     from_user = None
     from_user_id, _ = extract_user(message)
@@ -73,11 +73,11 @@ async def who_is(client, message):
     if from_user is None:
         return await status_message.edit("no valid user_id / message specified")
     message_out_str = ""
-    message_out_str += f"<b>➲First Name:</b> {from_user.first_name}\n"
+    message_out_str += f"<b>➲ Fɪʀꜱᴛ Nᴀᴍᴇ:</b> {from_user.first_name}\n"
     last_name = from_user.last_name or "<b>None</b>"
-    message_out_str += f"<b>➲Last Name:</b> {last_name}\n"
-    message_out_str += f"<b>➲Telegram ID:</b> <code>{from_user.id}</code>\n"
-    username = from_user.username or "<b>None</b>"
+    message_out_str += f"<b>➲ Lᴀꜱᴛ Nᴀᴍᴇ:</b> {last_name}\n"
+    message_out_str += f"<b>➲ Tᴇʟᴇɢʀᴀᴍ Iᴅ:</b> <code>{from_user.id}</code>\n"
+    username = from_user.username or "<b>Nᴏɴᴇ</b>"
     dc_id = from_user.dc_id or "[User Doesn't Have A Valid DP]"
     message_out_str += f"<b>➲Data Centre:</b> <code>{dc_id}</code>\n"
     message_out_str += f"<b>➲User Name:</b> @{username}\n"
