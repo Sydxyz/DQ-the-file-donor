@@ -240,10 +240,10 @@ async def next_page(bot, query):
                 ],
             )
     btn.insert(0, [
-        InlineKeyboardButton("! Sᴇɴᴅ Δʟʟ Tᴏ PM !",  url=await get_shortlink(query.message.chat.id, f"https://telegram.me/{temp.U_NAME}?start=send_fall_files_{offset}_{req}"),
+        InlineKeyboardButton("! Sᴇɴᴅ Δʟʟ Tᴏ PM !",  callback_data=f"send_fall#files#{offset}#{req}"),
         InlineKeyboardButton("! LᴀɴɢᴜΔɢᴇs !", callback_data=f"select_lang#{req}")
-    ]
-)
+    ])
+
     btn.insert(0, [
         InlineKeyboardButton("⚡ Cʜᴇᴄᴋ Bᴏᴛ PM ⚡", url=f"https://t.me/{temp.U_NAME}")
     ])
@@ -353,7 +353,7 @@ async def language_check(bot, query):
             )
         
         btn.insert(0, [
-            InlineKeyboardButton("! Sᴇɴᴅ Aʟʟ Tᴏ PM !", url=await get_shortlink(query.message.chat.id, f"https://telegram.me/{temp.U_NAME}?start=send_fall#{pre}#{0}#{userid}"),
+            InlineKeyboardButton("! Sᴇɴᴅ Aʟʟ Tᴏ PM !", callback_data=f"send_fall#{pre}#{0}#{userid}"),
             InlineKeyboardButton("! Lᴀɴɢᴜᴀɢᴇs !", callback_data=f"select_lang#{userid}")
         ])
 
