@@ -713,11 +713,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
                             [
                              [
                              InlineKeyboardButton('〄 SᴜᴩᴩOʀᴛ ᴜS 〄', url=SYD_LINKS),
-
-                             
                              InlineKeyboardButton('Iɴʟɪɴᴇ SᴇΔʀᴄʜ ☌', switch_inline_query_current_chat=query)
 
         ],[
+                             
+                             
 
 
 
