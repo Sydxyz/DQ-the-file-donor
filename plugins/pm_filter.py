@@ -580,11 +580,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
                         reply_markup=InlineKeyboardMarkup(
                             [
                              [
-                              InlineKeyboardButton('〄 SᴜᴩᴩOʀᴛ ᴜS 〄', url=SYD_LINKS),
+                              InlineKeyboardButton('〄 SᴜᴩᴩOʀᴛ ᴜS 〄', url='https://t.me/parallel'),
                               InlineKeyboardButton('Iɴʟɪɴᴇ SᴇΔʀᴄʜ ☌', switch_inline_query_current_chat=query)
 
                        ],[
-                              InlineKeyboardButton('⚐ Wᴀᴛᴄʜ Ѧɴᴅ Ξɴᴊᴏy ❦', url=SYD_SHARE)
+                              InlineKeyboardButton('⚐ Wᴀᴛᴄʜ Ѧɴᴅ Ξɴᴊᴏy ❦', url='https://t.me/parallel)
 
                              ]
 
@@ -663,7 +663,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                   InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
                   InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
                ],[
-                  InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="t.me/crearbeatz")
+                  InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="t.me/syd_xyz")
                  ]
                 ]
             )
