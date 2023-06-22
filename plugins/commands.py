@@ -199,7 +199,7 @@ async def start(client, message):
 
 
              
-                          InlineKeyboardButton("⚐ Wᴀᴛᴄʜ Ѧɴᴅ Ξɴᴊᴏy ❦", url=SYD_SHARE)
+                          InlineKeyboardButton('⚐ Wᴀᴛᴄʜ Ѧɴᴅ Ξɴᴊᴏy ❦', url=SYD_SHARE)
                              ]
                         ]
                     )
