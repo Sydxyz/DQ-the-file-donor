@@ -225,7 +225,7 @@ async def start(client, message):
 
 
              
-                          InlineKeyboardButton("⚐ Wᴀᴛᴄʜ Ѧɴᴅ Ξɴᴊᴏy ❦", url=SYD_SHARE)
+                          InlineKeyboardButton('⚐ Wᴀᴛᴄʜ Ѧɴᴅ Ξɴᴊᴏy ❦', url=SYD_SHARE)
                              ]
                         ]
                     )
@@ -343,14 +343,14 @@ async def start(client, message):
                      InlineKeyboardButton('〄 SᴜᴩᴩOʀᴛ ᴜS 〄', url=SYD_LINKS),
 
                              
-                             InlineKeyboardButton('Iɴʟɪɴᴇ SᴇΔʀᴄʜ ☌', switch_inline_query_current_chat=query)
+                     InlineKeyboardButton('Iɴʟɪɴᴇ SᴇΔʀᴄʜ ☌', switch_inline_query_current_chat='')
 
         ],[
 
 
 
              
-                              InlineKeyboardButton("⚐ Wᴀᴛᴄʜ Ѧɴᴅ Ξɴᴊᴏy ❦", url=SYD_SHARE)
+                     InlineKeyboardButton('⚐ Wᴀᴛᴄʜ Ѧɴᴅ Ξɴᴊᴏy ❦', url=SYD_SHARE)
                              ]
                     ]
                 )
@@ -403,15 +403,15 @@ async def start(client, message):
               InlineKeyboardButton('〄 SᴜᴩᴩOʀᴛ ᴜS 〄', url=SYD_LINKS),
 
                              
-                             InlineKeyboardButton('Iɴʟɪɴᴇ SᴇΔʀᴄʜ ☌', switch_inline_query_current_chat=query)
+              InlineKeyboardButton('Iɴʟɪɴᴇ SᴇΔʀᴄʜ ☌', switch_inline_query_current_chat='')
 
         ],[
 
 
 
              
-                              InlineKeyboardButton("⚐ Wᴀᴛᴄʜ Ѧɴᴅ Ξɴᴊᴏy ❦", url=SYD_SHARE)
-                             ]
+              InlineKeyboardButton('⚐ Wᴀᴛᴄʜ Ѧɴᴅ Ξɴᴊᴏy ❦', url=SYD_SHARE)
+        ]
             ]
         )
     )
