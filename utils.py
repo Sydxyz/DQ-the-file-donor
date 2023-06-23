@@ -1,6 +1,6 @@
 import logging
 from pyrogram.errors import InputUserDeactivated, UserNotParticipant, FloodWait, UserIsBlocked, PeerIdInvalid, ChatAdminRequired
-from info import AUTH_CHANNEL, LONG_IMDB_DESCRIPTION, MAX_LIST_ELM, SHORTLINK_URL, SHORTLINK_API, LOG_CHANNEL, GRP_LNK, CHNL_LNK, CUSTOM_FILE_CAPTION, IS_VERIFY, VERIFY2_URL, VERIFY2_API
+from info import AUTH_CHANNEL, LONG_IMDB_DESCRIPTION, MAX_LIST_ELM, SHORTLINK_URL, SHORTLINK_API, LOG_CHANNEL, GRP_LNK, CHNL_LNK, CUSTOM_FILE_CAPTION, IS_VERIFY, VERIFY2_URL, VERIFY2_API, SYD_SHARE, SYDLINKS 
 from imdb import Cinemagoer 
 import asyncio
 from pyrogram.types import Message, InlineKeyboardButton, InlineKeyboardMarkup
@@ -643,11 +643,11 @@ async def send_all(bot, userid, files, ident):
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                        InlineKeyboardButton('〄 SᴜᴩᴩOʀᴛ ᴜS 〄', url='https://t.me/parallel'),
+                        InlineKeyboardButton('〄 SᴜᴩᴩOʀᴛ ᴜS 〄', url=SYD_LINKS),
                         InlineKeyboardButton('Iɴʟɪɴᴇ SᴇΔʀᴄʜ ☌', switch_inline_query_current_chat='')
 
         ],[
-                        InlineKeyboardButton('⚐ Wᴀᴛᴄʜ Ѧɴᴅ Ξɴᴊᴏy ❦', url='https://t.me/parallel')
+                        InlineKeyboardButton('⚐ Wᴀᴛᴄʜ Ѧɴᴅ Ξɴᴊᴏy ❦', url=SYD_SHARE)
                              ]
                     ]
                 )
