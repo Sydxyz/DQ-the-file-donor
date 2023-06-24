@@ -100,11 +100,11 @@ async def next_page(bot, query):
         return
     settings = await get_settings(query.message.chat.id)
     temp.SEND_ALL_TEMP[query.from_user.id] = files
-    if save_group_settings(query.message.chat.id, 'is_shortlink', False)
-        ENABLE_SHORTLINK = False
-    else:
-        await  'is_shortlink' in settings.keys():
+    if 'is_shortlink' in settings.keys():
         ENABLE_SHORTLINK = settings['is_shortlink']
+    else:
+       await save_group_settings(query.message.chat.id, 'is_shortlink', False)
+        ENABLE_SHORTLINK = False
     if ENABLE_SHORTLINK and settings['button']:
         btn = [
             [
