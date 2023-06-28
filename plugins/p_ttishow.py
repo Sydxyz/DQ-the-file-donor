@@ -39,11 +39,11 @@ async def save_group(bot, message):
             return
         buttons = [[
                     InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
-                    InlineKeyboardButton('Sᴇᴛᴛɪɴɢꜱ 🫥', callback_data='sydsettings')
+                    InlineKeyboardButton('Sᴇᴛᴛɪɴɢꜱ 🫥', url="/settings")
                 ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await message.reply_text(
-            text=f"<b>Tʜᴀɴᴋ yᴏᴜ Fᴏʀ Aᴅᴅɪɴɢ Mᴇ Iɴ {message.chat.title} 🫠\n\nIꜰ yᴏᴜ Hᴀᴠᴇ αɴy Qᴜᴇꜱᴛɪᴏɴꜱ & ∂ᴏᴜʙᴛ ᴀʙᴏᴜᴛ υꜱɪɴɢ Mᴇ Kɪɴᴅʟy Cᴏɴᴛᴀᴄᴛ ᴍY Sᴜᴩᴩᴏʀᴛ Gʀᴏᴜᴩ. 😜😜, Cʟɪᴄᴋ ᴏɴ /settings Tᴏ Sᴛᴀʀᴛ ᴛʜᴇ ᴡᴀy......</b>",
+            text=f"<b>Tʜᴀɴᴋ yᴏᴜ Fᴏʀ Aᴅᴅɪɴɢ Mᴇ Iɴ {message.chat.title} 🫠\n\nIꜰ yᴏᴜ Hᴀᴠᴇ αɴy Qᴜᴇꜱᴛɪᴏɴꜱ & ∂ᴏᴜʙᴛ ᴀʙᴏᴜᴛ υꜱɪɴɢ Mᴇ Kɪɴᴅʟy Cᴏɴᴛᴀᴄᴛ ᴍY Sᴜᴩᴩᴏʀᴛ Gʀᴏᴜᴩ. 😜😜 \n\n Cʟɪᴄᴋ ᴏɴ /settings Tᴏ Sᴛᴀʀᴛ ᴛʜᴇ ᴡᴀy......</b>",
             reply_markup=reply_markup)
     else:
         settings = await get_settings(message.chat.id)
