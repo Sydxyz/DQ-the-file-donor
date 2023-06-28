@@ -1413,6 +1413,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data =="testalertsyd":
         await query.answer("Dᴏɴ'ᴛ ɴᴇᴇᴅ Tᴏ ᴛʜɪɴᴋ ʙʀᴏ,ᴊᴜꜱᴛ ᴊᴏɪɴ 🥰",show_alert=True)
         
+    elif query.data =="sydbegin":
+        await query.answer("ᴏᴋᴋ,,,Lᴇᴛꜱ ʙᴇɢɪɴ ᴛyᴩᴇ ᴀɴᴅ ꜱᴇɴᴅ ᴛʜᴇ ᴍᴏᴠɪᴇ ɴᴀᴍᴇ 🫣🫣",show_alert=True)
+        
     elif query.data == "admin":
         buttons = [[
             InlineKeyboardButton('☚ Bᴀᴄᴋ', callback_data='extra')
