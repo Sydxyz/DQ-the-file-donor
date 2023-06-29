@@ -86,7 +86,7 @@ elif query.data == "sydpro":
             text=script.SYDSETTINGS_TXT,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
-        
+)
 
 @Client.on_message(filters.command('leave') & filters.user(ADMINS))
 async def leave_a_chat(bot, message):
