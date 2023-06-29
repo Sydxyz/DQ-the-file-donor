@@ -40,7 +40,7 @@ async def save_group(bot, message):
             return
         buttons = [[
                     InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
-                    InlineKeyboardButton('Sᴇᴛᴛɪɴɢꜱ 🫥', callback_data='sydpro')
+                    InlineKeyboardButton('Sᴇᴛᴛɪɴɢꜱ 🫥', callback_data='start')
                 ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await message.reply_text(
@@ -72,23 +72,6 @@ async def save_group(bot, message):
                 
                
 
-@Client.on_callback_query()
-async def cb_handler(client: Client, query: CallbackQuery):
-elif query.data == "sydpro":
-        buttons = [[
-            InlineKeyboardButton('☚ Bᴀᴄᴋ', callback_data='close_data')
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await client.edit_message_media(
-            query.message.chat.id, 
-            query.message.id, 
-            InputMediaPhoto(random.choice(PICS))
-        )
-        await query.message.edit_text(
-            text=script.SYDSETTINGS_TXT,
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
-)
 
 @Client.on_message(filters.command('leave') & filters.user(ADMINS))
 async def leave_a_chat(bot, message):
