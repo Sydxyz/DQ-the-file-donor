@@ -74,7 +74,7 @@ async def save_group(bot, message):
 
 elif query.data == "sydpro":
         buttons = [[
-            InlineKeyboardButton('☚ Bᴀᴄᴋ', callback_data='help')
+            InlineKeyboardButton('☚ Bᴀᴄᴋ', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await client.edit_message_media(
