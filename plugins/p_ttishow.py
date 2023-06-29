@@ -72,6 +72,8 @@ async def save_group(bot, message):
                 
                
 
+@Client.on_callback_query()
+async def cb_handler(client: Client, query: CallbackQuery):
 elif query.data == "sydpro":
         buttons = [[
             InlineKeyboardButton('☚ Bᴀᴄᴋ', callback_data='close_data')
