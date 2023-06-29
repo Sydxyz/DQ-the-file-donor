@@ -39,7 +39,7 @@ async def save_group(bot, message):
             return
         buttons = [[
                     InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
-                    InlineKeyboardButton('Sᴇᴛᴛɪɴɢꜱ 🫥', callback_data='sydsettings'))
+                    InlineKeyboardButton('Sᴇᴛᴛɪɴɢꜱ 🫥', callback_data='sydsettings')
                 ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await message.reply_text(
