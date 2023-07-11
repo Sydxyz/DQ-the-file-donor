@@ -247,7 +247,7 @@ Moon Knight ❗️ ᴇᴛᴄ.. ❗️
 
 𝗡𝗮𝗺𝗲 <b>: {}</b>
 
-𝗠𝗲𝘀𝘀𝗮𝗴𝗲 <b>: {}</b> """
+𝗠𝗲𝘀𝘀𝗮𝗴𝗲 <b>: <code>{}</code>  </b> """
 
     CAPTION = """
 <b>📂 Fɪʟᴇ ɴᴀᴍᴇ : <code>{file_name}</code> </b>
