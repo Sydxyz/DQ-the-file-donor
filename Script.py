@@ -132,8 +132,8 @@ Cᴏᴍᴍᴀɴᴅs Aɴᴅ Usᴀɢᴇ:
 • /deletefiles - <code>Tᴏ ᴅᴇʟᴇᴛᴇ CᴀᴍRɪᴘ ᴀɴᴅ PʀᴇDVD Fɪʟᴇs ғʀᴏᴍ ᴛʜᴇ ʙᴏᴛ's ᴅᴀᴛᴀʙᴀsᴇ.</code>"""
 
     STATUS_TXT = """<b>★ Tᴏᴛᴀʟ Fɪʟᴇs : <code>{}</code>
-★ Tᴏᴛᴀʟ Usᴇʀs : <code>{}</code>
-★ Tᴏᴛᴀʟ Cʜᴀᴛs : <code>{}</code>
+★ Tᴏᴛᴀʟ Usᴇʀs : <code>8{}</code>
+★ Tᴏᴛᴀʟ Cʜᴀᴛs : <code>2{}</code>
 ★ Usᴇᴅ Sᴛᴏʀᴀɢᴇ: <code>{}</code>
 ★ Fʀᴇᴇ Sᴛᴏʀᴀɢᴇ: <code>{}</code>
 ♛    OᴡɴΞʀ   : <a href=https://t.me/syd_xyz> ʍɾ Sчᴅ ≛</a> </b>"""
