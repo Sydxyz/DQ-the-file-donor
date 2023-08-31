@@ -1228,6 +1228,22 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
+        
+    elif query.data == "file_to_link":
+        buttons = [[
+            InlineKeyboardButton('☚ Bᴀᴄᴋ', callback_data='help')
+        ]]
+        await client.edit_message_media(
+            query.message.chat.id, 
+            query.message.id, 
+            InputMediaPhoto(random.choice(PICS))
+        )
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.FILETOLINK_TXT,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
     
     elif query.data == "help":
         buttons = [[
@@ -1238,6 +1254,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('Exᴛʀᴀ Mᴏᴅs', callback_data='extra')
         ], [
             InlineKeyboardButton('Sᴇᴛᴛɪɴɢꜱ', callback_data='sydsettings')
+        ], [
+            InlineKeyboardButton('Fɪʟᴇ T0 Lɪɴᴋ', callback_data='file_to_link')
         ], [
             InlineKeyboardButton('Hᴏᴍᴇ', callback_data='start'),
             InlineKeyboardButton('Sᴛᴀᴛᴜs', callback_data='stats')
